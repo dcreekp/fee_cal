@@ -9,8 +9,6 @@ flask-restplus = "*"
 
 [dev-packages]
 pytest = "*"
-ipython = "*"
-zappa = "*"
 
 [requires]
 python_version = "3.6"
