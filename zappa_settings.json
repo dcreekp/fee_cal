@@ -1,0 +1,9 @@
+{
+    "lendable": {
+        "app_function": "fee_api.app",
+        "profile_name": "zappa",
+        "project_name": "fee-calculator",
+        "runtime": "python3.6",
+        "s3_bucket": "feecal-0tgc1umg1"
+    }
+}
