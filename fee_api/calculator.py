@@ -21,6 +21,7 @@ T12 = {
     18: 360,
     19: 380,
     20: 400,
+    21: 400,
     }
 
 T24 = {
@@ -44,6 +45,7 @@ T24 = {
     18: 720,
     19: 760,
     20: 800,
+    21: 800,
     }
 
 
@@ -68,7 +70,7 @@ class FeeCalculator:
             low = self.TERMS[term][t_key]
         except KeyError:
             raise ValueError("term must be 12 or 24")
-        high = self.TERMS[term].get(t_key + 1, self.TERMS[term][t_key])
+        high = self.TERMS[term][t_key + 1]
         return low, high
 
     def interpolate(self, loan, low, high):
